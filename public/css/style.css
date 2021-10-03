@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+nav img {
+    width: 35px;
+  }
+nav a {
+    color: red;
+    text-decoration: none;
+}
+nav a:hover {
+    color: rosybrown;
+    
+}
+
+body {
+    background-image: linear-gradient(red,rosybrown);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+section#pokebola {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(247, 250, 53);
+    color: #0139a0;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(214, 15, 15);
+    transform: scale(1.5);
+  }
+
+section#pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 20rem 0 20rem;
+}
+section#detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 20rem 0 20rem;
+}
+
+section#pokemons:hover {
+    transform: scale(1.1);
+}
+
+section#cadastrar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:white;
+    margin: 10rem;
+    
+}
+
+section#cadastrar button {
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+}
+
+section#cadastrar button:hover {
+    color: white;
+    background-color: red;
+    transform: scale(1.1);
+}
