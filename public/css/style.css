@@ -29,10 +29,11 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
+header h1 {
     color: white;
     display: flex;
     justify-content: center;
+    margin: 3rem;
 }
 
 section#pokebola {
@@ -42,15 +43,15 @@ section#pokebola {
 }
 section#message {
     padding: 1.5rem;
-    background-color: rgb(247, 250, 53);
+    background-color: rgb(255, 255, 255);
     color: #0139a0;
     position: fixed;
-    top: 3rem;
+    top: 2rem;
     left: 0;
     right: 0;
     z-index: 100;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
   
     display: flex;
@@ -58,23 +59,34 @@ section#message {
     justify-content: space-between;
   }
   
-  span#close {
+span#close {
     font-size: 2rem;
     cursor: pointer;
     transition: .3s;
-  }
+}
   
-  span#close:hover{
+span#close:hover{
     color: rgb(214, 15, 15);
     transform: scale(1.5);
-  }
+}
 
 section#pokemons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: white;
     margin: 0 20rem 0 20rem;
+}
+a.card {
+    background-color: rgb(255, 255, 255);
+    width: 10rem;
+    border: 1rem;
+    padding: 1rem;
+}
+a.card img {
+    width: 10rem;
+}
+a.card:hover {
+    transform: scale(1.1);
 }
 section#detalhes {
     display: flex;
@@ -83,9 +95,8 @@ section#detalhes {
     background-color: white;
     margin: 0 20rem 0 20rem;
 }
-
-section#pokemons:hover {
-    transform: scale(1.1);
+section#detalhes img {
+    width: 20rem;
 }
 
 section#cadastrar {

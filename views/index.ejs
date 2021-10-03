@@ -31,7 +31,7 @@
     <section id="pokemons">
         <% pokedex.forEach((item, index)=> { %>
             <a class="card" href="/detalhes/<%= index %>">
-                <img src="<%= item.imagem %>" alt="">
+                <img src="<%= item.imagem %>" alt="<%= item.nome %>">
                 <h1>
                     <%= item.nome %>
                 </h1>
