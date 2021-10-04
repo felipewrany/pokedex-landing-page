@@ -29,7 +29,7 @@ body {
     background-image: linear-gradient(red,rosybrown);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header h1 {
@@ -78,7 +78,8 @@ section#pokemons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 20rem 0 20rem;
+    row-gap: 2rem;
+    margin: 0 20rem 3rem 20rem;
 }
 a.card {
     display: flex;
@@ -138,4 +139,16 @@ section#cadastrar button:hover {
     background-color: rgb(117, 170, 63);
     border-radius: 1rem;
     padding: 0.7rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top:auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    text-align: center;
 }
