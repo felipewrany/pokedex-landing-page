@@ -10,7 +10,7 @@
 <body>
     <nav>
         <section id="pokebola">
-            <img src="/img/pokebola.png" alt="Pokebola" >
+            <img src="/img/pokedex.png" alt="Pokebola" >
             <a href="/">Pokedéx</a>
         </section>
         <section>
@@ -19,7 +19,7 @@
         </section>
     </nav>
     <header>
-        <h1>Pokedéx Detalhado</h1>
+        <h1><%= pokemon.nome %></h1>
     </header>
 
     <section id="detalhes">
@@ -30,24 +30,10 @@
             </p>
             <div id="info1">
                 <div class="info2">
-                    <h4>Altura:</h4>
-                    <h3>
-                        <%= pokemon.altura %>
-                    </h3>
-                    <h4>Peso:</h4>
-                    <h3>
-                        <%= pokemon.peso %>
-                    </h3>
-                </div>
-                <div class="info2">
-                    <h4>Categoria:</h4>
-                    <h3>
-                        <%= pokemon.categoria %>
-                    </h3>
-                    <h4>Habilidade:</h4>
-                    <h3>
-                        <%= pokemon.habilidade %>
-                    </h3>
+                    <h4>Altura:<%= pokemon.altura %></h4>
+                    <h4>Peso:<%= pokemon.peso %></h4>
+                    <h4>Categoria:<%= pokemon.categoria %></h4>
+                    <h4>Habilidade:<%= pokemon.habilidade %></h4>
                 </div>
             </div>
             <h4>Tipo:</h4>

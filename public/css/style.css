@@ -12,7 +12,9 @@ nav{
     font-weight: bold;
 }
 nav img {
-    width: 35px;
+    width: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 nav a {
     color: red;
@@ -27,6 +29,7 @@ body {
     background-image: linear-gradient(red,rosybrown);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 header h1 {
@@ -34,6 +37,7 @@ header h1 {
     display: flex;
     justify-content: center;
     margin: 3rem;
+    font-size: 3rem;
 }
 
 section#pokebola {
@@ -53,7 +57,7 @@ section#message {
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-  
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,16 +81,24 @@ section#pokemons {
     margin: 0 20rem 0 20rem;
 }
 a.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     width: 10rem;
     border: 1rem;
+    border-radius: 1rem;
     padding: 1rem;
+    color: black;
+    text-decoration: none;
 }
 a.card img {
     width: 10rem;
 }
 a.card:hover {
     transform: scale(1.1);
+    color: rosybrown;
 }
 section#detalhes {
     display: flex;
@@ -94,6 +106,8 @@ section#detalhes {
     justify-content: space-around;
     background-color: white;
     margin: 0 20rem 0 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 section#detalhes img {
     width: 20rem;
@@ -118,4 +132,10 @@ section#cadastrar button:hover {
     color: white;
     background-color: red;
     transform: scale(1.1);
+}
+
+.info2 {
+    background-color: rgb(117, 170, 63);
+    border-radius: 1rem;
+    padding: 0.7rem;
 }
